@@ -1,7 +1,7 @@
 function numerosRomanos(string) {
   let  soma  = 0
   string = string.toLowerCase()
-  let listaComparar = []
+  
   let listaChaveValor = {
     I: 1,
     V: 5,
