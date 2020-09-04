@@ -55,8 +55,9 @@
        function mudarP1(){
             let novoP1 = document.getElementsByTagName('p')[1]
             novoP1.innerHTML = "Empregado ganhando 6000 e fazendo um bom projeto!!!"
+            //se fosse (novoP1.innerText é mais para texto )
             console.log(novoP1)
-
+            // ou document.getElementsByTagName('p')[1].innerText = "ola mundo"
        }
        mudarP1()
 
@@ -79,7 +80,7 @@
       //4
       function corrigirH1(){
           let correcao = document.getElementsByTagName("h1")[0]
-          correcao.innerHTML = "Exercício 5.1 - JavaEscripite"
+          correcao.innerHTML = "Exercício 5.1 - JavaEscripit"
           console.log(correcao)
       }
       corrigirH1()
@@ -101,6 +102,21 @@
           }
       }
      exibe()
+
+     //resumo 
+     // Com document eu acesso todo o arquivo html , serve para modificar a pagina html de modo muito mais iterativo e com dinamismo
+     document.querySelector("p")// dessa forma seleciona o primeiro  paragrafo que ele encontra
+     document.querySelector("#id") // preciso passar assim para buscar id
+     document.querySelector(".nome_da_classe p")// nome da classe e se ela estiver dentro de um paragrafo
+     document.querySelector(".classe_da_div .class_da_div_dentro_da_div")// o query selector é bem especifico para cada ocorrencia
+      // o que fica a esquerda do espaço é parente ddo da direita mais com uma classe aciam
+      //document.querySelector("div#nome_do_id div.nome_da_classe")// o query selector é bem especifico para cada ocorrencia
+      //seleciona dentro das div aqueal com id especificado e dentro da outra div a classe especificada
+
+      //for(let i = 0 ; i < todosParagrafos.length ; i+= 1){
+       //     document.querySelectorAll('div')[i].className = "nome_da_classe red"
+        //  }
+
     </script>
   </body>
 </html>
