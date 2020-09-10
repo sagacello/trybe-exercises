@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>exercicio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+  </head>
+
+  <body>
+    <button id="btn" type="button">
+        Clique aqui!
+      </button>
+      <div id="div-colorida" style="border: 4px solid green;">
+        Ao clicar na caixa, o texto será alterado!
+      </div>
+      
+      <script>
+        const botao = document.querySelector('#btn');
+        const caixaColorida = document.querySelector('#div-colorida');
+      
+        function abreCaixa() {
+          let textoOriginal = 'Ao clicar na caixa, o texto será alterado!';
+          let textoAlterado = 'Texto alterado! Clique novamente para voltar ao original';
+      
+          if (caixaColorida.innerText === textoOriginal){
+            caixaColorida.innerText = textoAlterado;
+          }
+      
+          else {
+            caixaColorida.innerText = textoOriginal;
+          }
+        }
+      
+        botao.addEventListener('mouseover', abreCaixa);
+
+        //ex1 
+        //const caixaUm = document.querySelector(".caixa1");
+        //const caixaDois = document.querySelector(".caixa2");
+
+        //function trocaCor() {
+        //caixaDois.style.backgroundColor = "cyan";
+        //}
+
+        //caixaUm.addEventListener('click', trocaCor);
+
+        //exemplo 
+        /*function trocaCor () {
+          if (){
+            caixaUm.style.backgroundColor = 'green';
+          }
+          
+          else if (){
+            caixaDois.style.backgroundColor = 'green';
+          }
+          */
+      </script>
+
+
+  </body>
