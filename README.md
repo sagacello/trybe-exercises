@@ -9,3 +9,4 @@ Introdução:
  - Unix & Shell --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/my-shell-scripts)
  - Javascript --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco4)
  - HTML e CSS --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco3)
+ - Eventos DOM --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco5)
