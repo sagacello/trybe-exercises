@@ -7,7 +7,35 @@ let listaDados = document.querySelector("#lista")
 
 //Colocar estados no combobox
 function inserir(){
-    const estados = ["Sao Paulo" , "Rio de Janeiro" , "Mato Grosso","Acre", "Minas Gerais"]
+    let estados = [
+        'Acre',
+        'Alagoas',
+        'Amapá',
+        'Amazonas',
+        'Bahia',
+        'Ceará',
+        'Distrito Federal',
+        'Espírito Santo',
+        'Goiás',
+        'Maranhão',
+        'Mato Grosso',
+        'Mato Grosso do Sul',
+        'Minas Gerais',
+        'Pará',
+        'Paraíba',
+        'Paraná',
+        'Pernambuco',
+        'Piauí',
+        'Rio de Janeiro',
+        'Rio Grande do Norte',
+        'Rio Grande do Sul',
+        'Rondônia',
+        'Roraima',
+        'Santa Catarina',
+        'São Paulo',
+        'Sergipe',
+        'Tocantins'
+    ];
     let listaEstados = document.querySelector("#estado")
     for(estado in estados){
         let novoOption = document.createElement("option")
@@ -43,4 +71,11 @@ entradaCpf.addEventListener('keydown' ,function(enter){
         novoElemento.innerHTML = entradaCpf.value
         listaDados.appendChild(novoElemento)
       }
+})
+//apagar entradas
+botaoApagarLista.addEventListener("click" , function(){
+        let tudo = document.querySelectorAll('input')
+        for(elementos in tudo){
+            tudo[elementos].value = ""
+        }
 })
