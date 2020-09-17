@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ <body>
+  
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+ </body>
+</html>
+<script>
+    var img1 = document.getElementsByTagName ('img')[0];
+    var img = document.getElementsByTagName ('img')[0];
+
+    
+    img1.style.right = '100px';
+    function gatoEsquerda () {
+      let caminhaEsquerda = parseInt(img.style.left)//tem que armazenar em uma variavel para poder comparar depois dois valores numericos
+      img.style.left = (caminhaEsquerda + 10) + 'px';
+        if (caminhaEsquerda > (window.innerWidth-img.width)) { // se a imagem atingir o tamanho maximo
+          img.style.right = '0px'
+          return window.setInterval (gatoDireita, 50)          
+        } 
+    }
+
+    function gatoDireita(){
+      let caminhaDireita =  parseInt(img.style.right)
+      img1.style.right = (caminhaDireita + 10) + 'px';
+      if (caminhaDireita > (window.innerWidth-img.width)) { // se a imagem atingir o tamanho maximo
+          img1.style.left = '0px'
+          return window.setInterval (gatoEsquerda, 50)          
+        } 
+    }
+    window.setInterval (gatoDireita, 50)   ;//vai chamar a mesma funcao a cada 50 milisegundos
+</script>

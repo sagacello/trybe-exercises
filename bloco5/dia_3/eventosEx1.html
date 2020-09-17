@@ -1,0 +1,36 @@
+<! DOCTYPE html>
+<html>
+ <head>
+  <meta charset = "utf-8" />
+  <title> </title>
+ </head>
+ <body>
+ 
+ <h1> Mad Libs </h1>
+ 
+ <ul>
+  <li> Substantivo: <input type = "text" id = "noun">
+  <li> Adjetivo: <input type = "text" id = "adjective">
+  <li> Nome de alguém: <input type = "text" id = "person">
+ </ul>
+ 
+ <button id = "lib-button"> Libere! </button>
+  
+ <div id = "story"> </div>
+  
+ </body>
+ <script>
+     function historia(){
+        let subs = document.getElementById("noun").value
+        let adj = document.getElementById("adjective").value
+        let nome = document.getElementById("person").value
+        let historia = document.getElementById("story")
+        historia.innerHTML = nome + ' ' + subs + ' ' + adj
+
+     }
+     let libButton = document.getElementById('lib-button')
+     libButton.addEventListener("click" , historia)
+
+ </script>
+ //onload é um evento que permite carregar somente depois do html ser carregado
+</html>

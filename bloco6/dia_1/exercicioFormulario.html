@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+  <body>
+    <div class="jumbotron">
+   <h1>Formulario</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="">Nome :</label>
+            <input name="nome" required="required" placeholder="Digite seu nome" type="text"class="inputAparencia"  >
+        </div>
+        <div>
+            <label for="">Email :</label>
+            <input name="email" required="required" placeholder="Digite seu email" type="text"class="inputAparencia"  >
+        </div>
+        <div>
+            <label for="">Cidade :</label>
+            <select name="cidade" required="required"  class="inputAparencia"  >
+                <option selected="select" value="">Selecionar</option>
+                <option value="1">Ribeirão</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Nova </option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Sua foto</label>
+            <input class="inputAparencia" required="required" type="file" name='foto'>
+           
+        </div>
+        <br>
+        <div>
+            <p>Selecione seu sexo </p>
+            <label for="sexo1"><input id="sexo1" type="radio" class="inputAparenciaRadio" value="m" name='sexo'>Masculino</label>
+            <label for="sexo2"><input id="sexo2" type="radio" class="inputAparenciaRadio" value="f" name='sexo'>Feminino</label>
+        </div>
+        
+        <div>
+            <label for=""> Biografia &nbsp  </label>
+          <textarea placeholder="Escreva sua biografia" class="inputAparencia" required="required" name="biografia" cols="30" rows="5">
+            </textarea>    
+        </div>
+
+        <div>
+            <label for="">Senha : </label>
+            <input placeholder="Digite sua senha" name="senha" required="required" type="password" class="inputAparencia"  >
+        </div>
+
+        <div>
+            <label for="noticias">
+                <input id="noticias"  type="checkbox" class="inputAparenciaRadio"  >
+                Deseja receber promoções ?  </label>
+        </div>
+
+
+        
+    
+    
+
+    <button name="enviar" class="btn btn-outline-success" type="submit" value="1" id="enviar">Enviar</button>
+   
+
+    </form>
+  </div>
+
+  </body>
+  <script  type="text/javascript" src="script.js"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
