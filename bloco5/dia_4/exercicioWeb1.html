@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leitor</title>
+  <style>
+       .barra {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      border: 1px solid rgb(42, 63, 42);
+      padding: 20px;
+      padding-top: 0px;
+  }
+    .painel1 , .painel2 , .painel3{
+      display: flex;
+      flex-direction: column;
+  
+    }
+  </style>
+  <body>
+    <nav id="barra" class="barra">
+        <div id="corFundo" class="painel1">
+            <h1 >Cor de fundo</h1>
+            <button>black</button>
+            <button>white</button>
+            <button>red</button>
+        </div>
+
+        <div id="corFonte" class="painel2">
+            <h1 >Cor de fonte</h1>
+            
+            <button>black</button>
+            <button>red</button>
+            <button>white</button>
+          </div>
+
+          <div id="tamanhoFonte" class="painel3">
+            <h1 >Tamanho da fonte</h1>
+            <button>8pt</button>
+            <button>10pt</button>
+            <button>12pt</button>
+            <button>14pt</button>
+            <button>20pt</button>
+          </div>
+    </nav>
+    <section class="tituloConteudo">
+        <h2>Conteudo</h2>
+      </section>
+
+      <section class="conteudo">
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet tellus purus. Sed blandit nec duit eu lacinia. Vestibulum tincidunt hendrerit turpis, vitae hendrerit ipsum mollis at. Nulla a leo purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ac tellus at ante ullamcorper finibus. Sed efficitur risus sit amet diam fringilla sagittis. Mauris enim elit, sagittis tincidunt arcu id, efficitur blandit magna. Sed ac aliquam ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse lobortis aliquam lacus sit amet consectetur. Nulla neque lectus, venenatis bibendum tortor sed, rhoncus consectetur mauris. Phasellus ac aliquet massa. Donec vitae odio et mauris vehicula euismod. Vivamus tempor justo sit amet ornare fermentum.
+        </p>
+        <p class="paragraph">
+          Proin imperdiet velit enim, eget vestibulum urna commodo non. Cras tincidunt nisl in venenatis maximus. Donec sit amet sem at quam suscipit pharetra. Integer feugiat id nunc volutpat laoreet. Donec ornare sodales ipsum. Nam efficitur est felis, vitae tempor lorem porttitor eget. Vestibulum eu nisl vitae nulla iaculis tempus sit amet et dui. Phasellus eget erat id nibh pulvinar sodales. Praesent fermentum erat at mauris feugiat semper. In congue nisi ut dignissim mattis. Cras fringilla a ante a dapibus. Nulla fringilla dolor vel massa lobortis fringilla.
+        </p>
+        <p class="paragraph">
+          Vestibulum blandit, diam at lacinia hendrerit, augue velit varius turpis, at imperdiet lacus tellus vel felis. Quisque velit magna, faucibus sit amet sem consequat, fermentum ultrices lorem. Integer vestibulum purus vel tincidunt mattis. Suspendisse lacinia sodales nibh. In hac habitasse platea dictumst. Curabitur at cursus lectus, sit amet vestibulum dolor. Mauris ultricies lacus quis arcu faucibus varius. Nulla venenatis neque sed nisl consequat lobortis. Praesent pretium rhoncus tellus a pellentesque. In et tincidunt odio. Praesent pulvinar dapibus mi, in dapibus lacus rhoncus eget. Nam laoreet metus nibh, sit amet semper mi lacinia id.
+        </p>
+        <p class="paragraph">
+          Vivamus ac ullamcorper nisl, eget rutrum mauris. Praesent nec elementum sem, et porttitor sem. Morbi placerat urna sit amet iaculis egestas. Suspendisse malesuada eget risus congue pulvinar. Donec nisi elit, cursus quis tempus sed, accumsan non mauris. Praesent ligula leo, auctor ullamcorper ultricies nec, sagittis et leo. Sed convallis ut tellus lobortis consectetur. Pellentesque mauris lectus, pretium at nunc a, porttitor dictum ipsum. Morbi suscipit ultrices massa nec egestas. Curabitur scelerisque sem vitae commodo dictum. Phasellus pretium luctus nulla vel aliquet. Duis at arcu vitae elit lacinia semper.
+        </p>
+      </section>
+  </body>
+
+  <script>
+    window.onload = function(){
+        function corFundo(color){
+        let conteudo = document.querySelector(".conteudo")
+        conteudo.style.backgroundColor = color
+        
+        localStorage.setItem("corDeFundo", color)
+
+        }
+
+      let botaoCorFundo = document.querySelectorAll("#corFundo>button")
+      
+      for (let i = 0; i < botaoCorFundo.length; i += 1) {
+        botaoCorFundo[i].addEventListener("click", function(event) {
+            corFundo(event.target.innerHTML)
+        })
+      }
+
+      function iniciar() {
+        let corDeFundo = localStorage.getItem("corDeFundo")
+        if (corDeFundo) corFundo(corDeFundo)
+
+      }
+      iniciar()
+      
+      //para limpar localStorage.cleaer()
+    }
+
+  </script>
