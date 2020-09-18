@@ -1,0 +1,81 @@
+
+  .list-group{
+    padding: 20px;
+    margin-top: 15px;
+  }
+  input[type = "text"]{
+      width: 100%;
+  }
+ 
+  .jumbotron{
+      background-color: #adc5b9 !important;
+      opacity: 0.7;
+  }
+
+  .principal{
+    font-family:courier,arial,helvetica;
+    text-align: center;
+    font-size: large;
+   
+  }
+
+  .inputAparencia{
+    border-radius:4px;
+    /*deslocamento de sombras   */
+    box-shadow: 1px 1px 2px #333333;    
+    background: #6c9b83; 
+    border:1px solid #000000;
+    color:white;
+    opacity: 0.8;
+    
+    margin-bottom: 10px;
+    
+     padding: 10px;
+
+   }
+
+    .inputAparencia:hover{
+    background: #ffffff; border:1px solid #d11111;
+    color:black;
+
+    }
+.inputAparenciad{
+    width: 50% !important;
+    border-radius:4px;
+    /*deslocamento de sombras   */
+    box-shadow: 1px 1px 2px #333333;    
+    background: #6c9b83; 
+    border:1px solid #000000;
+    width:340px;
+    color:white;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px;
+
+}
+    .inputAparenciaRadio{
+       
+        /*deslocamento de sombras   */
+         margin: 10px;
+        padding: 5px;
+        color:white;
+        opacity: 0.8;
+        padding: 10px;
+    }
+   
+   .formulario{
+    border:2px solid #000000;
+    border-radius: 1%;
+    width: 100%;
+  }
+
+ .btn{
+     margin: 20px;
+ }
+
+ h1{
+     background-color: #6c9b83 ;
+     width: 100%;
+     border-radius: 20%;
+ }
