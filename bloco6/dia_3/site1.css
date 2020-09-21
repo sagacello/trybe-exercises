@@ -1,0 +1,123 @@
+/* flex-start: Os itens são alinhados à esquerda do contêiner.
+flex-end: Os itens são alinhados ao lado direito do contêiner.
+center: Os itens são alinhados no centro do contêiner.
+space-between: Os itens são exibidos com espaçamento igual entre eles.
+space-around: Os itens são exibidos com espaçamento igual ao redor deles.
+baseline: Os itens são exibidos na linha de base do contêiner.
+stretch: Os itens são esticados para caber no contêiner. */
+
+
+#lagoa1{
+
+    display: flex;
+    justify-content: flex-end;
+/* move para direita  */
+}
+
+
+#lagoa2 {
+    display: flex;
+    justify-content: center;
+    /* move para centro  */
+  }
+
+  #pond {
+    display: flex;
+    align-items: flex-end;
+    /* align-items alinha os itens verticalmente e aceita os seguintes valores:
+
+    flex-start: Os itens são alinhados ao topo do contêiner.
+    flex-end: Os itens são alinhados ao fundo do recipiente.
+    center: Os itens são alinhados no centro vertical do contêiner.
+    baseline: Os itens são exibidos na linha de base do contêiner.
+    stretch: Os itens são esticados para caber no contêiner. */
+  }
+
+  #pond {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  /* dessa forma consigo fazer um item fiar ao centr da div */
+  }
+
+
+  #pond {
+    display: flex;
+    flex-direction:row-reverse;
+  }
+  /* flex-direction. Esta propriedade CSS define a direção em que os itens são colocados no contêiner e aceita os seguintes valores:
+    row: Os itens são colocados da mesma forma que a direção do texto.
+    row-reverse: Os itens são posicionados opostos à direção do texto.
+    column: Os itens são colocados de cima para baixo.
+    column-reverse: Os itens são colocados de baixo para cima. */
+
+    #pond {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        /* dessa forma eu consigo inverter o contudo de posição começando da ultima div
+        até a primeira em uma linha  */
+      }
+
+      #pond {
+        display: flex;
+      flex-direction:column;
+      justify-content:  flex-end;
+      } 
+      /* dessas forma os item que estavam alinhados em linha ficama em coluna , mais 
+      começando na parte inferior da div pai , e quando flex-direction é colum o justify-contente alinha de forma
+      horizontal */
+
+      #pond {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items:flex-end;
+      }
+      /* dessa forma os items sairam do topo  foram para baixo da div centralizados  */
+
+
+      #pond {
+        display: flex;
+      }
+      
+      .amarelo {
+      order: 1;
+      }
+
+      /* orderpropriedade a itens individuais. Por padrão, os itens têm um valor de 0, 
+      mas podemos usar essa propriedade para defini-la também como um valor inteiro positivo ou negativo (-2, -1, 0, 1, 2). 
+    sendo ordenados pela class por exmplo , .amarelo com esse comando ele vai para posiçao 1*/
+
+    #pond {
+        display: flex;
+        align-itens: flex-start;
+      }
+      
+      .amarelo {
+       align-self:flex-end;
+      }
+
+      /* dessa forma tambem posso alinhar somente um elementos com as mesmas propriedades de align-items 
+      
+    flex-start: Os itens são alinhados à esquerda do contêiner.
+    flex-end: Os itens são alinhados ao lado direito do contêiner.
+    center: Os itens são alinhados no centro do contêiner.
+    space-between: Os itens são exibidos com espaçamento igual entre eles.
+    space-around: Os itens são exibidos com espaçamento igual ao redor deles.
+    baseline: Os itens são exibidos na linha de base do contêiner.
+    stretch: Os itens são esticados para caber no contêiner. */
+
+
+
+    /* align-content determina o espaçamento entre as linhas, enquanto align-itemsdetermina como os itens 
+    como um todo são alinhados dentro do contêiner. Quando há apenas uma linha, align-contentnão tem efeito. */
+
+    #pond {
+        display: flex;
+      flex-flow: wrap-reverse ;
+      align-content:space-between;
+      flex-direction:column-reverse;
+      justify-content:center;
+      }
+      /* ultima resposta  */
