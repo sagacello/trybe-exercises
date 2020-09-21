@@ -24,6 +24,7 @@ stretch: Os itens são esticados para caber no contêiner. */
   #pond {
     display: flex;
     align-items: flex-end;
+    
     /* align-items alinha os itens verticalmente e aceita os seguintes valores:
 
     flex-start: Os itens são alinhados ao topo do contêiner.

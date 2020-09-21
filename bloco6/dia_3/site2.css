@@ -1,0 +1,57 @@
+/* ex2 */
+.torre-grupo-1 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.torre-grupo-2 {
+display: flex;
+justify-content: center;
+
+}
+.torre-grupo-3 {
+display: flex;
+justify-content: flex-end;
+
+}
+
+/* ex3 */
+.torre-grupo-1 {
+display: flex;
+justify-content:center;
+}
+.torre-grupo-2 {
+display: flex;
+justify-content:space-between;
+}
+/* ex5 */
+
+.torre-grupo-1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.torre-grupo-2 {
+display: flex;
+justify-content:center;
+}
+
+.torre-grupo-3 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ex9 */
+.torre-grupo-1 {
+display: flex;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
+.torre-grupo-2 {
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
