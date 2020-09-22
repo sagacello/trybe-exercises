@@ -1,0 +1,87 @@
+/* ex14 */
+#pond {
+    display: flex;
+  }
+  
+.yellow {
+order: 1;
+}
+
+/* ex15 */
+#pond {
+    display: flex;
+  }
+  
+  .red {
+  order:-1;
+  }
+
+/* ex16 */
+.pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+   align-self:flex-end;
+  }
+
+  /* ex17 */
+  #pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+  align-self:flex-end;
+  order:3;
+  }
+
+  /* ex18 */
+  #pond {
+    display: flex;
+  flex-wrap:wrap;
+  }
+
+  /* ex19 */
+  #pond {
+    display: flex;
+  flex-wrap: wrap;
+   flex-direction:column;
+  }
+
+  /* ex20 */
+  #pond {
+    display: flex;
+  flex-flow: column wrap;
+  }
+
+  /* ex21 */
+  #pond {
+    display: flex;
+    flex-wrap: wrap;
+  align-content:flex-start;
+  }
+
+  /* ex22 */
+  #pond {
+    display: flex;
+    flex-wrap: wrap;
+  align-content:flex-end;
+  }
+
+  /* ex23 */
+  #pond {
+    display: flex;
+    flex-wrap: wrap;
+  align-content:center;
+  flex-direction:column-reverse;
+  }
+  /*ex24  */
+  #pond {
+    display: flex;
+  flex-flow: wrap-reverse ;
+  align-content:space-between;
+  flex-direction:column-reverse;
+  justify-content:center;
+  }
