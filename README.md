@@ -12,3 +12,4 @@ Introdução:
  - Eventos DOM --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco5)
  - Arrow functions --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_1)
  - Objetos -- >  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_2)
+ - Testes unitários --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_3)
