@@ -13,3 +13,4 @@ Introdução:
  - Arrow functions --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_1)
  - Objetos -- >  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_2)
  - Testes unitários --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco7/dia_3)
+ - Higher Order Functions - forEach, find, some, every, sort -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_1)
