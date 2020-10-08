@@ -16,3 +16,4 @@ Introdução:
  - Higher Order Functions - forEach, find, some, every, sort -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_1)
  - Higher Order Functions - filter, map -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_2)
  - Higher Order Functions - reduce -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_3)
+ - spread operator, parâmetro rest, destructuring -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_4)
