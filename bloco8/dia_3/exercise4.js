@@ -84,6 +84,16 @@ const filtrar = (acumulador , string) => {
 }
 return books.reduce(filtrar)
 }
-console.log(longestNamedBook())
 
+//ou 
+function longestNamedBook2() {
+  return books.reduce((acumulador , item) => {
+      if(acumulador['name'].length < item['name'].length){
+          return item
+      }
+      return acumulador
+
+  })
+
+}
 assert.deepStrictEqual(longestNamedBook(), expected_result);
