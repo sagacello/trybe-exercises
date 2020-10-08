@@ -19,8 +19,8 @@ const ships = [
     }
 ]
 
-const shipLength = (navio) => {
-     return `${navio['name']} is ${navio['length']} ${navio['measurementUnit']} long`
+const shipLength = ({name,length,measurementUnit}) => {
+     return `${name} is ${length} ${measurementUnit} long`
 }
 console.log(shipLength(ships[1]))
 assert.equal(shipLength(ships[0]), "Titanic is 269.1 meters long")
