@@ -1,4 +1,3 @@
-//Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
 const assert = require('assert');
 
 const books = [
@@ -67,9 +66,10 @@ const books = [
 const expected_result = false;
 
 function authorUnique() {
-    let data = books.some((book) => book['author']['birthYear'] == books['author']['birthYear'])
-    console.log(data)}
+  return books.every((book)=>
+    !books.some((bookSome)=> 
+      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.id !== book.id)
+  ));
+}
 
-
-authorUnique()
-//assert.strictEqual(authorUnique(), expected_result);
+assert.deepStrictEqual(authorUnique(), expected_result);

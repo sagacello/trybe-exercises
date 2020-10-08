@@ -9,17 +9,12 @@ const names = [
 ];
 
 
-
 function containsA() {
-    const contaLetras = (acumulador , string) => {
-        string.map((busca) => {
-            console.log(busca)
-        })        
-
-    }
-    return names.reduce(contaLetras)
-
+  return names.reduce((acc, curr)=> 
+     acc + curr.split('').reduce((acumulator, current) => {
+        if(current === 'a'|| current === 'A') return acumulator + 1;
+        return acumulator;
+     }, 0),0);
 }
-console.log(containsA())
-//assert.deepEqual(containsA(), 20);
 
+//assert.deepEqual(containsA(), 20);
