@@ -16,6 +16,7 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 
 const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`);
 
+// definição da função sendMarsTemperature...
 const sendMarsTemperature = (suces, error) => {
     const porcentagemParaDarCerto = Math.random() <= 0.6;
     setTimeout(() => {
