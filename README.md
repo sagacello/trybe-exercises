@@ -17,4 +17,4 @@ Introdução:
  - Higher Order Functions - filter, map -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_2)
  - Higher Order Functions - reduce -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_3)
  - Spread operator, parâmetro rest, destructuring -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco8/dia_4)
- - Promisses -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco9/dia_2)
+ - Promisses -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco9/dia2)
