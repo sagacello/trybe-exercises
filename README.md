@@ -20,3 +20,4 @@ Introdução:
  - Promisses -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco9/dia2)
  - Testes automatizados -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco10/dia1)
  - Testes automatizados com jest --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco10/dia2)
+ - Introdução ao react --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco11/dia1)
