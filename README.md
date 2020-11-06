@@ -21,4 +21,4 @@ Introdução:
  - Testes automatizados -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco10/dia1)
  - Testes automatizados com jest --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco10/dia2)
  - Introdução ao react --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco11/dia_1/primeiro-app)
- - Introdução ao react parte 2 --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco11/dia_2/primeiro-app)
+ - Introdução ao react parte 2 --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco11/dia_2/my-pokedex)
