@@ -25,3 +25,4 @@ Introdução:
  - React estados e evento -->  [Exercícios](https://github.com/sagacello/exercise-pokedex-state)
  - Forms e estados react -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco12/dia_2/my-form-2.0)
  - Ciclo de um aplicativo no React --> [Exercícios](https://github.com/sagacello/exercise-dog-image/tree/projeto-api-cachorro-react)
+ - React testing library --> [Exercícios](https://app.betrybe.com/course/front-end/react/tests/rtl-part-2/conteudos/mocking-modules?use_case=side_bar)
