@@ -26,4 +26,4 @@ Introdução:
  - Forms e estados react -->  [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco12/dia_2/my-form-2.0)
  - Ciclo de um aplicativo no React --> [Exercícios](https://github.com/sagacello/exercise-dog-image/tree/projeto-api-cachorro-react)
  - React testing library --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco15/dia_1/testes)
- - React testing mocks e inputs --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco15/dia_2/exercicio1),[Exercícios2](https://github.com/tryber/exercise-digimon-finders/pull/3/commits/17a188bb07ee7f807994db881fc272a67d50b2d5)
+ - React testing mocks e inputs --> [Exercício1](https://github.com/sagacello/trybe-exercises/tree/master/bloco15/dia_2/exercicio1), [Exercício2](https://github.com/tryber/exercise-digimon-finders/pull/3/commits/17a188bb07ee7f807994db881fc272a67d50b2d5)
