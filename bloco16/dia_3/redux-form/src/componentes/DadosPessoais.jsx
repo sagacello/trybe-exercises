@@ -15,7 +15,6 @@ class DadosPessoais extends React.Component {
     const { email, nome, cpf } = this.state;
     e.preventDefault();
     this.props.addFormulario({ email, nome, cpf });
-    console.log(email);
     this.setState({
       email: '',
       nome: '',
@@ -32,6 +31,7 @@ class DadosPessoais extends React.Component {
           <input
             type="text"
             name="nome"
+            value={nome}
             onChange={(e) => this.setState({ nome: e.target.value })}
           />
         </label>
@@ -40,6 +40,7 @@ class DadosPessoais extends React.Component {
           <input
             type="text"
             name="email"
+            value={email}
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </label>
@@ -49,29 +50,23 @@ class DadosPessoais extends React.Component {
           <input
             type="text"
             name="cpf"
-            onChange={(e) => this.setState({ cpf: e.target.value })}
+            value={cpf}
           />
         </label>
         <div>
           <button onClick={(e) => this.maracutaia(e)}>Enviar</button>
         </div>
-        <div>{email}</div>
-        <div>{nome}</div>
-        <div>{cpf}</div>
-        <h1>Luciano❤️Pablo Vittar</h1>
-        <div>
-          {array.map((busca, index) => {
-            console.log(busca);
-            return (
-              <div key={busca.email}>
-                <p>ID de registro: {index + 1}</p>
-                <p>Nome: {busca.name}</p>
-                <p>cpf: {busca.age}</p>
-                <p>Email: {busca.email}</p>
-              </div>
-            );
-          })}
-        </div>
+        {array.map((busca, index) => {
+          console.log(busca);
+          return (
+            <div key={busca.email}>
+              <p>ID de registro: {index + 1}</p>
+              <p>Nome: {busca.nome}</p>
+              <p>cpf: {busca.cpf}</p>
+              <p>Email: {busca.email}</p>
+            </div>
+          );
+        })}
       </form>
     );
   }
@@ -84,9 +79,5 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   array: state.registerReducer,
 });
-//array: state.registerReducer
-// email: state.registerReducer.email,
-//nome: state.registerReducer.nome,
-//cpf: state.registerReducer.cpf,
 
 export default connect(mapStateToProps, mapDispatchToProps)(DadosPessoais);
