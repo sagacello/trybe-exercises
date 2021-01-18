@@ -30,4 +30,4 @@ Introdução:
  - Redux no react --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco16/dia_2/my-app-redux)
  - Redux no react (formulario) --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/redux-react-formulario/bloco16/dia_3/redux-form)
  - Redux assíncrono --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco16/dia_5/doguinhos-app)
- - React context-api --> [Exercícios](https://github.com/sagacello/exercise-contextAPI-refactoring)
+ - React context-api --> [Exercícios](https://github.com/sagacello/exercise-contextAPI-refactoring/tree/exercise-two)
