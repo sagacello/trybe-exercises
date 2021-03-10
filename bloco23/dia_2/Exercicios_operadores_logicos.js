@@ -57,3 +57,28 @@ db.restaurants.find(
 
 //Selecione e faça a contagem dos restaurantes localizados nos bairros Queens , 
 //Staten Island e Broklyn e possuem avaliação maior que 4 .
+db.restaurants.find({
+    $and: [
+      { borough: { $in: ['Queens', 'Staten Island', 'Brooklyn'] } },
+      { rating: { $gt: 4 } },
+    ],
+  }).count();
+
+  //Selecione e faça a contagem dos restaurantes onde nem o campo avaliação seja igual a 1 ,
+  //nem o campo culinária seja do tipo American .
+  db.restaurants.find(
+    {$nor: [{ rating: { $eq: 1 }},{ cuisine: 'American'}]}
+  ).count()
+
+  //Selecione e faça a contagem dos resturantes em que a avaliação seja maior que 6 ou menor que 10 , e esteja localizado no 
+  //bairro Brooklyn ou não possuem culinária do tipo Delicatessen .
+  db.restaurants.find({
+    $and: [
+      { $or: [{ rating: { $gte: 6, $lt: 10 } }] },
+      { $or: [{ borough: 'Brooklyn' }, { cuisine: { $ne: 'Delicatessen' } }] },
+    ],
+  }).count();
+
+//Essa query seleciona todos os documentos da coleção inventory em que o campo qty existe 
+//e seu valor é diferente de 5 e 15 .
+  db.inventory.find({ qty: { $exists: true, $nin: [ 5, 15 ] } })
