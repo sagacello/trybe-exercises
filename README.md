@@ -33,3 +33,4 @@ Introdução:
  - React context-api --> [Exercícios](https://github.com/sagacello/exercise-contextAPI-refactoring/tree/exercise-two)
  - React hooks --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco18/dia_3/pokemon-hooks)
  - MongoDB --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco23/dia_2)
+ - Mongo Aggregation --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco25/Mongo_Aggregation_Pipeline)
