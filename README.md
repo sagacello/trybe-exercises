@@ -35,3 +35,4 @@ Introdução:
  - MongoDB --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco23/dia_2)
  - Mongo Aggregation --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco25/Mongo_Aggregation_Pipeline)
  - NodeJS Introdução --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco26/dia_1/exercicio)
+ - NodeJs fluxo --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco26/dia_2)
