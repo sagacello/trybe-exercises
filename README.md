@@ -38,3 +38,4 @@ Introdução:
  - NodeJs fluxo --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco26/dia_2)
  - NodeJs Estrutura MSC --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco27/dia_2/cep-lookup)
  - NodeJs JWT (JSON WEB TOKEN) --> [Exercício](https://github.com/sagacello/trybe-exercises/tree/master/bloco28/hello-jwt)
+ - Arquitetura SOLID e ORM --> [Exercícios](https://github.com/sagacello/trybe-exercises/tree/master/bloco31/dia2_pratica)
