@@ -1,0 +1,12 @@
+A coisa toda funciona assim:
+O navegador solicita que o usuário digite seu login e senha.
+O navegador então envia esse login e senha ao servidor, para verificar que esses dados estão corretos.
+Uma vez que valida login e senha, o servidor cria dois objetos: um contendo informações sobre o token que será gerado, que chamamos de header , e outro contendo os dados do usuário e as permissões que aquela pessoa têm, ao qual chamamos de payload .
+O servidor então converte esses dois objetos em JSON, junta-os em uma mesma string e utiliza um algorítmo chamado HMAC para "criptografar" essa string usando um "segredo" que só ele sabe, gerando o que chamamos de assinatura , que nada mais é do que Header + Payload criptografados.
+Por fim, o servidor combina o header, o payload originais e a assinatura, criando assim o token .
+O token é enviado ao cliente, que o armazena para utilizá-lo nas próximas requisições.
+Na próxima requisição...
+O navegador envia ao servidor os dados para, por exemplo, cadastrar um novo produto. Juntamente a esses dados, o navegador envia o token que recebeu ao realizar o login.
+Quando recebe os dados, a primeira coisa que o servidor faz é obter o Header e o Payload do token e criptografá-los, gerando, mais uma vez, a assinatura.
+O servidor, então, compara a nova assinatura com a assinatura que foi enviada pelo client. Se ambas forem iguais, quer dizer que o conteúdo do Header e do Payload não foram modificados desde o login.
+Agora que já sabe que o token é válido, o servidor continua processando a requisição e, por fim, entrega a resposta para o cliente.
